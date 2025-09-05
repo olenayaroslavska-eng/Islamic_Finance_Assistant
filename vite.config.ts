@@ -4,6 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
+    base: '/Islamic_Finance_Assistant/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -50,7 +51,7 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'dist',
     },
     server: {
       port: 3000,

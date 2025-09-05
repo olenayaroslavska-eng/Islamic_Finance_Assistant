@@ -58,6 +58,9 @@
       },
       "scripts": {
             "dev": "vite",
-            "build": "vite build"
+            "build": "vite build",
+            "lint": "echo 'No linting configured'",
+            "typecheck": "tsc --noEmit",
+            "preview": "vite preview"
       }
 }
