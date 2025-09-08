@@ -5928,3 +5928,18 @@ html {
     opacity: 0;
   }
 }
+
+
+/* Fix for scroll issues */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: auto;
+}
+
+#root {
+  min-height: 100%;
+}

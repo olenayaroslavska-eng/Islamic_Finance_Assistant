@@ -126,11 +126,11 @@ export default function App() {
   }
 
   return (
-    <div className="h-screen flex bg-background">
+    <div className="min-h-screen flex bg-background">
       {!showMurabahWizard && <MainSidebar activeFlow={activeFlow} onFlowChange={handleFlowChange} />}
-      <div className="flex-1 flex flex-col overflow-hidden">
+      <div className="flex-1 flex flex-col">
         {!showMurabahWizard && <PlatformHeader activeFlow={showAICollaboration ? "ai-collaboration" : activeFlow} onLogout={handleLogout} />}
-        <main className="flex-1 overflow-hidden">
+        <main className="flex-1 overflow-auto">
           {renderContent()}
         </main>
       </div>
