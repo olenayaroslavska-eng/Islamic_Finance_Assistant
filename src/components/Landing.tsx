@@ -326,10 +326,10 @@ export function Landing({ onEnterPlatform }: LandingProps) {
               return (
                 <Card 
                   key={link.id}
-                  className="cursor-pointer transition-all duration-200 hover:shadow-sm hover:-translate-y-1 hover:border-primary/60 group"
+                  className="cursor-pointer transition-all duration-200 hover:shadow-sm hover:-translate-y-1 hover:border-primary/60 group flex flex-col h-full"
                   onClick={() => onEnterPlatform(link.id)}
                 >
-                  <CardHeader className="pb-4">
+                  <CardHeader className="pb-4 flex-1">
                     <div className="w-12 h-12 bg-primary/10 rounded-md flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
@@ -338,7 +338,7 @@ export function Landing({ onEnterPlatform }: LandingProps) {
                       {link.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="pt-0">
+                  <CardContent className="pt-0 mt-auto">
                     <Button 
                       variant="ghost" 
                       className="w-full justify-start p-0 h-auto font-medium text-primary hover:text-primary group-hover:translate-x-1 transition-transform"
