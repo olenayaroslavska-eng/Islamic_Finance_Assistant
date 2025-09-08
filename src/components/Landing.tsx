@@ -151,7 +151,6 @@ export function Landing({ onEnterPlatform }: LandingProps) {
                     Enter Platform
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                  <p className="text-xs text-muted-foreground ml-1">Start with Assistant</p>
                 </div>
                 <Button 
                   variant="outline" 
