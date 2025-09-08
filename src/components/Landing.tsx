@@ -93,7 +93,7 @@ export function Landing({ onEnterPlatform }: LandingProps) {
     {
       id: "document-analysis",
       title: "Document Analysis",
-      description: "Upload a contract for Shariah review",
+      description: "Upload a contract for review",
       icon: FileText,
       buttonText: "Open Analysis"
     },
@@ -341,7 +341,7 @@ export function Landing({ onEnterPlatform }: LandingProps) {
                   <CardContent className="pt-0 mt-auto">
                     <Button 
                       variant="ghost" 
-                      className="w-full justify-start p-0 h-auto font-medium text-primary hover:text-primary group-hover:translate-x-1 transition-transform"
+                      className="w-full justify-start p-0 h-auto font-medium text-primary hover:!text-white group-hover:translate-x-1 transition-transform"
                     >
                       {link.buttonText}
                       <ArrowRight className="ml-2 h-4 w-4" />
