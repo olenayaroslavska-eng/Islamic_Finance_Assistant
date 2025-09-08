@@ -18,7 +18,7 @@ export function MainSidebar({ activeFlow, onFlowChange }: MainSidebarProps) {
   ]
 
   return (
-    <div className="h-full w-64 bg-sidebar border-r border-sidebar-border flex flex-col">
+    <div className="min-h-screen w-64 bg-sidebar border-r border-sidebar-border flex flex-col sticky top-0 left-0">
       {/* Header with ZeroH wordmark */}
       <div className="p-6 border-b border-sidebar-border">
         <ZeroHWordmark className="text-sidebar-primary" />
