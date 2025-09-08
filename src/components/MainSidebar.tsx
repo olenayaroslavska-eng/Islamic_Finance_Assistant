@@ -1,4 +1,4 @@
-import { MessageCircle, FileText, Users, Scale, History, LayoutDashboard, FolderOpen } from "lucide-react"
+import { MessageCircle, FileText, Users, Scale, History, LayoutDashboard, FolderOpen, Play } from "lucide-react"
 import { ZeroHWordmark } from "./ZeroHWordmark"
 
 interface MainSidebarProps {
@@ -15,6 +15,7 @@ export function MainSidebar({ activeFlow, onFlowChange }: MainSidebarProps) {
     { id: "legal-partners", label: "Legal Partners", icon: Scale },
     { id: "history", label: "History", icon: History },
     { id: "dashboard", label: "Dashboard", icon: LayoutDashboard },
+    { id: "demo", label: "Demo", icon: Play },
   ]
 
   return (

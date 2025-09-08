@@ -10,10 +10,11 @@ import { ShariahBoard } from "./components/ShariahBoard"
 import { LegalPartners } from "./components/LegalPartners"
 import { History } from "./components/History"
 import { Vault } from "./components/Vault"
+import { Demo } from "./components/Demo"
 import { MurabahWizard } from "./components/MurabahWizard"
 import { Toaster } from "./components/ui/sonner"
 
-type Flow = "assistant" | "document-analysis" | "ai-collaboration" | "shariah-board" | "legal-partners" | "history" | "dashboard" | "vault"
+type Flow = "assistant" | "document-analysis" | "ai-collaboration" | "shariah-board" | "legal-partners" | "history" | "dashboard" | "vault" | "demo"
 
 interface Draft {
   id: string
@@ -111,6 +112,8 @@ export default function App() {
         return <History />
       case "vault":
         return <Vault />
+      case "demo":
+        return <Demo />
       default:
         return <Assistant onStartWizard={handleMurabahWizardStart} />
     }
